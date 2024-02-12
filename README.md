@@ -1,6 +1,6 @@
 # ANTEPROYECTO
 
-<div style="text-align: center;">
+<div style="background-color: lightgray; padding: 5px; text-align: center;">
     <p class="tittle" style="font-family: Georgia; font-size: 38px; color: green"> <b>BOSQUEDRON</b> </p>
 </div>
 
@@ -14,12 +14,14 @@
 | Curso: 2023/2024                                     |
 ___
 
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
+
 
 # ÍNDICE
    - [Introducción](#introducción-del-proyecto)
@@ -28,7 +30,9 @@ ___
    - [Medios hardware y software a utilizar](#medios-hardware-y-software-a-utilizar)
    - [Planificación](#planificación)
 
+
 <br>
+
 
 ## Introducción del proyecto
    Mi proyecto consiste en una página web dedicada a el medio ambiente, enfocada en los parques naturales. Se trata de una página web que tiene como intención fomentar el cuidado de los parques naturales y la cultura sobre los mismos.
@@ -47,7 +51,9 @@ ___
 
    Por ultimo, mencionar que al ser una página web que lleva a cabo distintos parques también se podrá elegir cuales sean los favoritos. Cada parque tendrá también de una API sobre su ubicación y se tratarán algunas APIs más durante mi proyecto.
 
+
 <br>
+
 
 ## Finalidad
    Ya mencionado de que trata la página web, hablaremos sobre su finalidad. ¿Cuál es la idea de está página web? ¿Para que sirve dicha página web? ¿Trae innovaciones consigo?
@@ -56,15 +62,21 @@ ___
 
    Por otro lado, otra de las finalidades se trata de la cultura de la naturaleza, fomentar de ella en la página será otro punto principal del que se tratará, siendo esta de menor importancia que el cuidado. No obstante, será un punto muy importante, ya que se encargará aquí de realizar entretenimiento para la página. ¿Cómo? Con la realización de tareas tales como fotografiar algún animal, responder algunas preguntas, no necesariamente tiene que ser una página que se use en el propio parque, sino que también se podrá usar desde casa, y así la página estará siempre en uso.
 
+
 <br>
+
 
 ## Objetivos
 
+
 <br>
+
 
 ## Medios hardware y software a utilizar
 
+
 <br>
+
 
 ## Planificación
 
