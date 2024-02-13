@@ -1,28 +1,16 @@
 # ANTEPROYECTO
 
+<img src="style.svg" alt="css-in-readme" width="100%">
+
 ![LogoBosquedron](./BosquedronLogo.png "Logo")
 
-<div align="center">
-   <img src="style.svg" alt="css-in-readme" width="70%">
-</div>
 
-
----
 | Autor: Daniel Guerrero Reina                         |
 | ---------------------------------------------------- |
-| I.E.S Francisco Romero Vargas (Jerez de la Frontera) |
-| Desarrollo de Aplicacioens Web                       |
+| [I.E.S Francisco Romero Vargas](https://sites.google.com/iesromerovargas.com/romerovargas/inicio) (Jerez de la Frontera) |
+| Desarrollo de Aplicaciones Web                       |
 | Curso: 2023/2024                                     |
-___
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+* * * 
 
 # ÍNDICE
    - [Introducción](#introducción-del-proyecto)
