@@ -1,13 +1,13 @@
 # ANTEPROYECTO
 
-<link rel="stylesheet" href="style.css">
-<div class="div">
-    <p class="p"> <b>BOSQUEDRON</b> </p>
+![LogoBosquedron](./BosquedronLogo.png "Logo")
+
+<div align="center">
+   <img src="style.svg" alt="css-in-readme" width="70%">
 </div>
 
-![LogoBosquedron](./BosquedronLogo.png "Logo")
----
 
+---
 | Autor: Daniel Guerrero Reina                         |
 | ---------------------------------------------------- |
 | I.E.S Francisco Romero Vargas (Jerez de la Frontera) |
