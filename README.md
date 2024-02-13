@@ -1,6 +1,6 @@
 # ANTEPROYECTO
 
-<img src="style.svg" alt="css-in-readme" width="100%">
+![TítuloBosquedron](./style.svg "Título")
 
 ![LogoBosquedron](./BosquedronLogo.png "Logo")
 
