@@ -1,7 +1,8 @@
 # ANTEPROYECTO
 
-<div style="background-color: lightgray; padding: 5px; text-align: center;">
-    <p class="tittle" style="font-family: Georgia; font-size: 38px; color: green"> <b>BOSQUEDRON</b> </p>
+<link rel="stylesheet" href="style.css">
+<div class="div">
+    <p class="p"> <b>BOSQUEDRON</b> </p>
 </div>
 
 ![LogoBosquedron](./BosquedronLogo.png "Logo")
