@@ -65,13 +65,13 @@
 
    La finalidad como bien se ha mencionado anteriormente trata principalmente tanto el cuidado de los parques, como mejorar la cultura y el conocimiento de la naturaleza en la sociedad. Ahora bien, para conseguir esto se requiere de una interfaz con facilidad a la hora de interactuar, ya que es una página que estará disponible para todas las edades. 
    
-   ### Eficiencia
+   ### Eficiencia :female_detective: :ok_hand:
    La página dispondrá de varias funciones como se tiene pensado, y algunas más que se vayan incorporando a lo largo del desarrollo de la página, siendo las principales funciones las que disponen de mayor facilidad para acceder a ellas. Estas funciones son principalmente las que tratan la interacción de los usuarios clientes, con los usuarios trabajadores, para que estos actuén ante cualquier situación más rápidamente. Al fin y al cabo, la idea principal de la página se trata de la conservación de la naturaleza de los parques, por lo cual las funciones de esta interacción deben ser las más eficientes.
 
-   ### Enfoque cultural
+   ### Enfoque cultural :classical_building:
    Por otro lado, otra de las finalidades se trata de la cultura de la naturaleza, este ya ha sido mencionado antes como uno de los dos puntos más importantes en este desarrollo, ya que traerá consigo una innovación importante. Se encargará aquí de desarrollar un entretenimiento para la página. ¿Cómo? Con la realización de actividades y desafíos interactivos, que buscan entretener y educar a los usuarios sobre la naturaleza. Por ejempo, fotografiar algún animal, responder algunas preguntas... 
    
-   ### Tu parque en casa
+   ### Tu parque en casa :house_with_garden:
    No necesariamente tiene que ser una página que se use en el propio parque, como ya mencioné se trata de fomentar en todo momento la cultura sobre este campo, así pues, se podrá usar desde casa. sino que también se podrá.
    En resuemen, los parques naturales publicarán tareas y desafíos diarios y semanales para entretener y fomentar el conocimiento de la naturaleza, incluso fuera de sus instalaciones físicas.
 
@@ -107,11 +107,11 @@
 
 
 ## Medios hardware y software a utilizar
-   ### Hardware
+   ### Hardware :desktop_computer:
    * **Ordenador:** Usaré un ordenador como medio de desarrollo del proyecto. Este equipo cuenta con suficiente potencia de procesamiento, memoria RAM y capacidad de almacenamiento para soportar las actividades de desarrollo y ejecución de la plataforma web.
    * **Servidor:** Se pensará su desarrollo para que pueda ser lanzado desde Docker, en un servidor de aws, no es algo oficial aún, se irá documentando a lo largo del proyecto.
 
-   ### Software
+   ### Software :cd:
    #### ***Lenguajes***
    * **HTML, CSS, JavaScript:** No pueden faltar ninguno de estos tres lenguajes, son fundamentales para la creación y diseño, tanto de la interfaz, como de la interacción en el lado cliente.
    * **React:** Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas.
@@ -132,33 +132,7 @@
 
 
 ## Planificación
-   ### Fases del Proyecto:
-   - Análisis y Definición de Requisitos:
-      - Identificar y comprender los requisitos del proyecto en términos de funcionalidad, características y objetivos.
-      - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
-
-   - Diseño y Arquitectura:
-      - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de datos y la navegación del sitio.
-      - Definir los componentes clave de la plataforma y las relaciones entre ellos.
-
-   - Desarrollo de Funcionalidades:
-      - Implementar las funcionalidades principales de la plataforma, centrándose en la interacción cliente-trabajador, la gestión de tareas y la información sobre parques naturales.
-      - Utilizar tecnologías como PHP, Symfony, React y MySQL para desarrollar y conectar los componentes del sistema.
-
-   - Pruebas y Depuración:
-      - Realizar pruebas exhaustivas para garantizar que todas las funcionalidades y características de la plataforma funcionen correctamente.
-      - Identificar y solucionar cualquier error o problema encontrado durante las pruebas.
-
-   - Despliegue y Puesta en Marcha:
-      - Preparar la plataforma para su lanzamiento, configurando el entorno de producción y realizando pruebas finales.
-      - Desplegar la plataforma en el servidor y asegurarse de que esté disponible para su uso público.
-
-   - Mantenimiento y Mejora Continua:
-      - Monitorear y mantener la plataforma para garantizar su rendimiento y seguridad continuos.
-      - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones periódicas según sea necesario.
-
-   ### Cronograma de Actividades:
-   - **Semana 1: Análisis y Diseño** 
+   ### **Semana 1: Análisis y Diseño** :page_facing_up: :artist:
      - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de 
      - Definir los requisitos del proyecto en términos de funcionalidad, características y objetivos.
      - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
@@ -166,47 +140,36 @@
 
       En principio realizaré un esquema para tener una estructura fijada a la hora de desarrollar mi proyecto, para ello necesitaré la arquitectura de la base de datos, y la arquitectura de la navegación de la página. 
        
-      ***Tiempo estimado de 3 horas***
+      Tiempo estimado de 3 horas
 
-     <br>
-
-   - **Semana 2-7: Desarrollo, documentación e implementación**
+   ### **Semana 2-7: Desarrollo, documentación e implementación** :man_technologist:
      - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador. Además de ir documentandolas paso a paso para su mayor entendimiento.
      - Integrar las tecnologías dadas en el curso como PHP, Symfony, React y MySQL para crear la aplicación.
 
       Desarrollo de la página web, aquí es dónde más horas invertiré, ya que esto es realmente el proyecto en sí. Como bien se menciona, implementaré los requisitos del proyecto, previamente documentados, usando los distintos lenguajes y softwares que he ido aprendiendo a lo largo del curso, e incluso algunos aprendidos por internet (ya sea gracias a canales de youtube, o a las propias páginas).
        
-     ***Tiempo estimado de 40 horas***
+     Tiempo estimado de 40 horas
 
-     <br>
-
-   - **Semana 8: Pruebas y Depuración**
+   ### **Semana 8: Pruebas y Depuración** :x: :question: :heavy_check_mark:
      - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
      - Identificar y corregir cualquier error o problema encontrado durante las pruebas.
 
       Parte del desarrollo, ya que como proyecto inicial, tendrá una serie de fallos. por lo cual es obligatorio hacer estas pruebas para poder comprobar que todo funciona según a los requisitos acordados en principio.
 
-     ***Tiempo estimado de 5 horas***
+     Tiempo estimado de 5 horas
 
-     <br>
-
-   - **Semana 9: Despliegue y Puesta en Marcha**
+   ### **Semana 9: Despliegue y Puesta en Marcha** :outbox_tray:
      - Preparar la plataforma para su lanzamiento en el entorno de producción.
      - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
       Una vez la versión de mi proyecto sea funcional en todos sus aspectos, pondré en marcha su lanzamiento a la web, para así poder comprobar que funciona todo correctamente.
       
-     ***Tiempo estimado de 3 horas***
+     Tiempo estimado de 3 horas
 
-     <br>
-
-   - **Semana 10++: Mantenimiento y Mejora Continua**
+   ### **Semana 10++: Mantenimiento y Mejora Continua** :mechanic:
      - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
      - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones según sea necesario.
 
       Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
       
-     ***Tiempo estimado de 8 horas***
-
-     <br>
-
+     Tiempo estimado de 8 horas
