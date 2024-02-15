@@ -133,43 +133,43 @@
 
 ## Planificación
    ### **Semana 1: Análisis y Diseño** :page_facing_up: :artist:
-     - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de 
-     - Definir los requisitos del proyecto en términos de funcionalidad, características y objetivos.
-     - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
-     - Diseñar la arquitectura de la página y la estructura de la base de datos.
+   - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de 
+   - Definir los requisitos del proyecto en términos de funcionalidad, características y objetivos.
+   - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
+   - Diseñar la arquitectura de la página y la estructura de la base de datos.
 
-      En principio realizaré un esquema para tener una estructura fijada a la hora de desarrollar mi proyecto, para ello necesitaré la arquitectura de la base de datos, y la arquitectura de la navegación de la página. 
+   En principio realizaré un esquema para tener una estructura fijada a la hora de desarrollar mi proyecto, para ello necesitaré la arquitectura de la base de datos, y la arquitectura de la navegación de la página. 
        
       Tiempo estimado de 3 horas
 
    ### **Semana 2-7: Desarrollo, documentación e implementación** :man_technologist:
-     - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador. Además de ir documentandolas paso a paso para su mayor entendimiento.
-     - Integrar las tecnologías dadas en el curso como PHP, Symfony, React y MySQL para crear la aplicación.
+   - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador. Además de ir documentandolas paso a paso para su mayor entendimiento.
+   - Integrar las tecnologías dadas en el curso como PHP, Symfony, React y MySQL para crear la aplicación.
 
-      Desarrollo de la página web, aquí es dónde más horas invertiré, ya que esto es realmente el proyecto en sí. Como bien se menciona, implementaré los requisitos del proyecto, previamente documentados, usando los distintos lenguajes y softwares que he ido aprendiendo a lo largo del curso, e incluso algunos aprendidos por internet (ya sea gracias a canales de youtube, o a las propias páginas).
+   Desarrollo de la página web, aquí es dónde más horas invertiré, ya que esto es realmente el proyecto en sí. Como bien se menciona, implementaré los requisitos del proyecto, previamente documentados, usando los distintos lenguajes y softwares que he ido aprendiendo a lo largo del curso, e incluso algunos aprendidos por internet (ya sea gracias a canales de youtube, o a las propias páginas).
        
      Tiempo estimado de 40 horas
 
    ### **Semana 8: Pruebas y Depuración** :x: :question: :heavy_check_mark:
-     - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
-     - Identificar y corregir cualquier error o problema encontrado durante las pruebas.
+   - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
+   - Identificar y corregir cualquier error o problema encontrado durante las pruebas.
 
-      Parte del desarrollo, ya que como proyecto inicial, tendrá una serie de fallos. por lo cual es obligatorio hacer estas pruebas para poder comprobar que todo funciona según a los requisitos acordados en principio.
+   Parte del desarrollo, ya que como proyecto inicial, tendrá una serie de fallos. por lo cual es obligatorio hacer estas pruebas para poder comprobar que todo funciona según a los requisitos acordados en principio.
 
      Tiempo estimado de 5 horas
 
-   ### **Semana 9: Despliegue y Puesta en Marcha** :outbox_tray:
-     - Preparar la plataforma para su lanzamiento en el entorno de producción.
-     - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
+   ### **Semana 9: Despliegue y Puesta en Marcha*
+   - Preparar la plataforma para su lanzamiento en el entorno de producción.
+   - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
-      Una vez la versión de mi proyecto sea funcional en todos sus aspectos, pondré en marcha su lanzamiento a la web, para así poder comprobar que funciona todo correctamente.
+   Una vez la versión de mi proyecto sea funcional en todos sus aspectos, pondré en marcha su lanzamiento a la web, para así poder comprobar que funciona todo correctamente.
       
      Tiempo estimado de 3 horas
 
    ### **Semana 10++: Mantenimiento y Mejora Continua** :mechanic:
-     - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
-     - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones según sea necesario.
+   - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
+   - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones según sea necesario.
 
-      Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
+   Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
       
      Tiempo estimado de 8 horas
