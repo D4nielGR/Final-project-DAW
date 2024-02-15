@@ -132,58 +132,81 @@
 
 
 ## Planificación
-
    ### Fases del Proyecto:
+   - Análisis y Definición de Requisitos:
+      - Identificar y comprender los requisitos del proyecto en términos de funcionalidad, características y objetivos.
+      - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
 
-   #### Análisis y Definición de Requisitos:
+   - Diseño y Arquitectura:
+      - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de datos y la navegación del sitio.
+      - Definir los componentes clave de la plataforma y las relaciones entre ellos.
 
-   - Identificar y comprender los requisitos del proyecto en términos de funcionalidad, características y objetivos.
-   - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
+   - Desarrollo de Funcionalidades:
+      - Implementar las funcionalidades principales de la plataforma, centrándose en la interacción cliente-trabajador, la gestión de tareas y la información sobre parques naturales.
+      - Utilizar tecnologías como PHP, Symfony, React y MySQL para desarrollar y conectar los componentes del sistema.
 
-   #### Diseño y Arquitectura:
+   - Pruebas y Depuración:
+      - Realizar pruebas exhaustivas para garantizar que todas las funcionalidades y características de la plataforma funcionen correctamente.
+      - Identificar y solucionar cualquier error o problema encontrado durante las pruebas.
 
-   - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de datos, la navegación del sitio y la interfaz de usuario.
-   - Definir los componentes clave de la plataforma y las relaciones entre ellos.
+   - Despliegue y Puesta en Marcha:
+      - Preparar la plataforma para su lanzamiento, configurando el entorno de producción y realizando pruebas finales.
+      - Desplegar la plataforma en el servidor y asegurarse de que esté disponible para su uso público.
 
-   #### Desarrollo de Funcionalidades:
-
-   - Implementar las funcionalidades principales de la plataforma, centrándose en la interacción cliente-trabajador, la gestión de tareas y la información sobre parques naturales.
-   - Utilizar tecnologías como PHP, Symfony, React y MySQL para desarrollar y conectar los componentes del sistema.
-
-   #### Pruebas y Depuración:
-
-   - Realizar pruebas exhaustivas para garantizar que todas las funcionalidades y características de la plataforma funcionen correctamente.
-   - Identificar y solucionar cualquier error o problema encontrado durante las pruebas.
-
-   #### Despliegue y Puesta en Marcha:
-
-   - Preparar la plataforma para su lanzamiento, configurando el entorno de producción y realizando pruebas finales.
-   - Desplegar la plataforma en el servidor y asegurarse de que esté disponible para su uso público.
-
-   #### Mantenimiento y Mejora Continua:
-
-   - Monitorear y mantener la plataforma para garantizar su rendimiento y seguridad continuos.
-   - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones periódicas según sea necesario.
+   - Mantenimiento y Mejora Continua:
+      - Monitorear y mantener la plataforma para garantizar su rendimiento y seguridad continuos.
+      - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones periódicas según sea necesario.
 
    ### Cronograma de Actividades:
-
    - **Semana 1: Análisis y Diseño** 
-     - Definir los requisitos del proyecto y elaborar la documentación necesaria.
-     - Diseñar la arquitectura de la aplicación y crear prototipos de la interfaz de usuario.
+     - Desarrollar un diseño de la arquitectura de la aplicación, incluyendo la estructura de la base de 
+     - Definir los requisitos del proyecto en términos de funcionalidad, características y objetivos.
+     - Realizar un análisis detallado de las necesidades de los usuarios y las expectativas del cliente.
+     - Diseñar la arquitectura de la página y la estructura de la base de datos.
 
-   - **Semana 2: Desarrollo e Implementación**
-     - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador.
-     - Integrar tecnologías como PHP, Symfony, React y MySQL para construir la aplicación.
+      En principio realizaré un esquema para tener una estructura fijada a la hora de desarrollar mi proyecto, para ello necesitaré la arquitectura de la base de datos, y la arquitectura de la navegación de la página. 
+       
+      ***Tiempo estimado de 3 horas***
+
+     <br>
+
+   - **Semana 2-7: Desarrollo, documentación e implementación**
+     - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador. Además de ir documentandolas paso a paso para su mayor entendimiento.
+     - Integrar las tecnologías dadas en el curso como PHP, Symfony, React y MySQL para crear la aplicación.
+
+      Desarrollo de la página web, aquí es dónde más horas invertiré, ya que esto es realmente el proyecto en sí. Como bien se menciona, implementaré los requisitos del proyecto, previamente documentados, usando los distintos lenguajes y softwares que he ido aprendiendo a lo largo del curso, e incluso algunos aprendidos por internet (ya sea gracias a canales de youtube, o a las propias páginas).
+       
+     ***Tiempo estimado de 40 horas***
+
+     <br>
 
    - **Semana 8: Pruebas y Depuración**
      - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
      - Identificar y corregir cualquier error o problema encontrado durante las pruebas.
 
+      Parte del desarrollo, ya que como proyecto inicial, tendrá una serie de fallos. por lo cual es obligatorio hacer estas pruebas para poder comprobar que todo funciona según a los requisitos acordados en principio.
+
+     ***Tiempo estimado de 5 horas***
+
+     <br>
+
    - **Semana 9: Despliegue y Puesta en Marcha**
      - Preparar la plataforma para su lanzamiento en el entorno de producción.
      - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
+      Una vez la versión de mi proyecto sea funcional en todos sus aspectos, pondré en marcha su lanzamiento a la web, para así poder comprobar que funciona todo correctamente.
+      
+     ***Tiempo estimado de 3 horas***
+
+     <br>
+
    - **Semana 10++: Mantenimiento y Mejora Continua**
      - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
      - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones según sea necesario.
+
+      Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
+      
+     ***Tiempo estimado de 8 horas***
+
+     <br>
 
