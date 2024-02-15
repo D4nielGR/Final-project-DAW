@@ -158,7 +158,7 @@
 
    > Tiempo estimado de 5 horas
 
-   ### *Semana 9: Despliegue y Puesta en Marcha*
+   ### **Semana 9: Despliegue y Puesta en Marcha** :outbox_tray:
    - Preparar la plataforma para su lanzamiento en el entorno de producción.
    - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
