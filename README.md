@@ -140,7 +140,7 @@
 
    En principio realizaré un esquema para tener una estructura fijada a la hora de desarrollar mi proyecto, para ello necesitaré la arquitectura de la base de datos, y la arquitectura de la navegación de la página. 
        
-      Tiempo estimado de 3 horas
+   > Tiempo estimado de 3 horas
 
    ### **Semana 2-7: Desarrollo, documentación e implementación** :man_technologist:
    - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador. Además de ir documentandolas paso a paso para su mayor entendimiento.
@@ -148,7 +148,7 @@
 
    Desarrollo de la página web, aquí es dónde más horas invertiré, ya que esto es realmente el proyecto en sí. Como bien se menciona, implementaré los requisitos del proyecto, previamente documentados, usando los distintos lenguajes y softwares que he ido aprendiendo a lo largo del curso, e incluso algunos aprendidos por internet (ya sea gracias a canales de youtube, o a las propias páginas).
        
-     Tiempo estimado de 40 horas
+   > Tiempo estimado de 40 horas
 
    ### **Semana 8: Pruebas y Depuración** :x: :question: :heavy_check_mark:
    - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
@@ -156,15 +156,15 @@
 
    Parte del desarrollo, ya que como proyecto inicial, tendrá una serie de fallos. por lo cual es obligatorio hacer estas pruebas para poder comprobar que todo funciona según a los requisitos acordados en principio.
 
-     Tiempo estimado de 5 horas
+   > Tiempo estimado de 5 horas
 
-   ### **Semana 9: Despliegue y Puesta en Marcha*
+   ### *Semana 9: Despliegue y Puesta en Marcha*
    - Preparar la plataforma para su lanzamiento en el entorno de producción.
    - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
    Una vez la versión de mi proyecto sea funcional en todos sus aspectos, pondré en marcha su lanzamiento a la web, para así poder comprobar que funciona todo correctamente.
       
-     Tiempo estimado de 3 horas
+   > Tiempo estimado de 3 horas
 
    ### **Semana 10++: Mantenimiento y Mejora Continua** :mechanic:
    - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
@@ -172,4 +172,4 @@
 
    Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
       
-     Tiempo estimado de 8 horas
+   > Tiempo estimado de 8 horas
