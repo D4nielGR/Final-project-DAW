@@ -167,30 +167,23 @@
 
    ### Cronograma de Actividades:
 
-   - **1: Análisis y Diseño**
+   - **Semana 1: Análisis y Diseño** 
      - Definir los requisitos del proyecto y elaborar la documentación necesaria.
      - Diseñar la arquitectura de la aplicación y crear prototipos de la interfaz de usuario.
 
-   - **2: Desarrollo e Implementación**
+   - **Semana 2: Desarrollo e Implementación**
      - Desarrollar las funcionalidades principales de la plataforma, comenzando con la interacción cliente-trabajador.
      - Integrar tecnologías como PHP, Symfony, React y MySQL para construir la aplicación.
 
-   - **3: Pruebas y Depuración**
+   - **Semana 8: Pruebas y Depuración**
      - Realizar pruebas exhaustivas en todas las funcionalidades de la plataforma.
      - Identificar y corregir cualquier error o problema encontrado durante las pruebas.
 
-   - **4: Despliegue y Puesta en Marcha**
+   - **Semana 9: Despliegue y Puesta en Marcha**
      - Preparar la plataforma para su lanzamiento en el entorno de producción.
      - Desplegar la plataforma en el servidor y realizar pruebas finales de rendimiento y seguridad.
 
-   - **5: Mantenimiento y Mejora Continua**
+   - **Semana 10++: Mantenimiento y Mejora Continua**
      - Monitorear y mantener la plataforma para garantizar su funcionamiento continuo.
      - Recopilar comentarios de los usuarios y realizar mejoras y actualizaciones según sea necesario.
 
-   ### Recursos y Responsabilidades:
-
-   - **Equipo de Desarrollo:** Desarrolladores de software con experiencia en PHP, Symfony, React y MySQL, así como diseñadores de interfaz de usuario y expertos en bases de datos.
-   - **Gestor de Proyecto:** Responsable de coordinar las actividades del equipo, establecer plazos y asegurar la entrega oportuna del proyecto.
-   - **Cliente/Usuario Final:** Responsable de proporcionar orientación y comentarios sobre los requisitos del proyecto, así como de probar y validar la plataforma antes de su lanzamiento.
-
-   Con una planificación detallada y un enfoque metódico, se espera que el proyecto avance de manera eficiente y se entregue con éxito dentro de los plazos establecidos. El seguimiento regular del progreso y la comunicación abierta entre todas las partes interesadas serán fundamentales para garantizar el éxito del proyecto.
