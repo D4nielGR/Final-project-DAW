@@ -1,7 +1,7 @@
 # ANTEPROYECTO
 
-![TítuloBosquedron](./style.svg "Título")
-![LogoBosquedron](./BosquedronLogo.png "Logo")
+![TítuloBosquedron](./BosquedronReadme/BosquedronTittle.svg "Título")
+![LogoBosquedron](./BosquedronReadme/BosquedronLogo.png "Logo")
 
 | Autor: Daniel Guerrero Reina                         |
 | ---------------------------------------------------- |
