@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets2 %}
+    <link rel="stylesheet" href="{{ asset('css/parks.css') }}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="bodyParks">
+        <h1 class="text-center mb-4">Parques Naturales</h1>    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for park in parks %}
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="{{ asset('parks/' ~ park.name) }}" class="stretched-link text-decoration-none">
+                            <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="card-img-top" alt="{{ park.name }} width="500" height="300"">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parque Natural {{ park.name }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %} 
+        </div>
+    </div>
+{% endblock %}

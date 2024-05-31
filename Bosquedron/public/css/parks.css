@@ -1,0 +1,39 @@
+/* Body */
+.bodyParks {
+    background: linear-gradient(to right, #ffecd2, #b5fc9f);
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tittle */
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #597f32;
+}
+
+/* Card park */
+.card {
+    border: none !important;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-bottom: 5px solid #97be4c; 
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    color: #597f32; 
+}
+
+.card-body {
+    background-color: #f7dab3;
+}

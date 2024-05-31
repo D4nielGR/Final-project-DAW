@@ -1,0 +1,65 @@
+/* DISEÑO 1 */
+.custom-navbar {
+    background-color: #97be4c; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgb(27, 184, 98);
+}
+
+.custom-navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar-brand img {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.custom-navbar-brand img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px #58af06;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.custom-navbar .navbar-title-logo:hover {
+    text-decoration: none;
+}
+
+.custom-navbar .navbar-title {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    color: #fed3b3;
+    margin-left: 10px;
+}
+
+.custom-navbar .nav-link {
+    color: #fed3b3 !important;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.custom-navbar .nav-link::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #25c7a4;
+    transition: width 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    background-color: #fed3b3;
+    color: #97be4c !important;
+    box-shadow: 0 10px 20px #7bad49;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover::before {
+    width: 100%;
+}

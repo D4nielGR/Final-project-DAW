@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4">
+                <h1 class="display-4">{{ park.name }}</h1>
+                <p class="lead">Bienvenido a el Parque Natural {{ park.name }}</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">{{ park.presentation }}</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><em><b>Información del Parque</b></em></h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Localización:</strong> {{ park.location }}</li>
+                            <li><strong>Teléfono:</strong> {{ park.phone }}</li>
+                            <li><strong>Email:</strong> <a href="mailto:{{ park.email }}">{{ park.email }}</a></li>
+                            <li><strong>Sitio Web:</strong> <a href="{{ park.website }}" target="_blank">{{ park.website }}</a></li>
+                            <li><strong>Horario de Apertura:</strong> {{ park.openingTimes }}</li>
+                            <li><strong>Precio de Entrada:</strong> {{ park.entryFee }}€</li>
+                            <li><strong>Declarado en:</strong> {{ park.declaredIn }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="img-fluid rounded" alt="{{ park.name }}">
+            </div>
+        </div>
+    </div>
+{% endblock %}

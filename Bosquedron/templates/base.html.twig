@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="icon" href="{{ asset('img/BosquedronLogoMini.png') }}">
+        <title>Bosquedron</title>
+
+        {% block stylesheets %} {{ encore_entry_link_tags('app') }} {% endblock %}
+        {% block javascripts %} {{ encore_entry_script_tags('app') }} {% endblock %}
+
+        {% block stylesheets2 %}{% endblock %}
+
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" >
+        <link rel="stylesheet" href="{{ asset('../assets/styles/navBar.css') }}">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        {% block header %}
+            <header id="navbar"></header>
+        {% endblock %}
+
+        {% block body %} {% endblock %}
+
+        {% block footer %}
+            <footer class="footer">
+                <p>&copy; Bosquedron. Todos los derechos reservados.</p>
+            </footer>
+        {% endblock %}
+    </body>
+</html>

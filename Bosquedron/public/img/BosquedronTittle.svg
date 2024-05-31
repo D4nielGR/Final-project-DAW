@@ -1,0 +1,30 @@
+<svg fill="none" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="border: 3px solid #B6B237;">
+            <style>
+                p {
+                    font-family: Georgia; 
+                    font-size: 25px; 
+                    color: #609C1C;
+                    background-color: #BEB72D;
+                    text-align: center;
+                    animation: mymove 3s;
+                }
+
+                @keyframes mymove {
+                    from {
+                        color: #BEB72D;
+                        margin-left: 100%;
+                        width: 300%;
+                    }
+                    to {
+                        color: #759D1E;
+                         margin-left: 0%;
+                        width: 100%;
+                    }
+                }
+            </style>
+            <p style="margin: 0;">BOSQUEDRON</p>
+        </div>
+    </foreignObject>
+</svg>

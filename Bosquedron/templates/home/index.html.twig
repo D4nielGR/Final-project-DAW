@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="tittle">   
+        <img src="{{ asset('img/BosquedronTittle.svg') }}" alt="Imagen de un parque natural">
+    </div>
+    <div class="container">
+        <p>Descubre la belleza de los parques naturales de nuestra región. Aquí encontrarás información detallada sobre cada parque, incluyendo su flora, fauna, rutas de senderismo y mucho más.</p>
+        <a href="{{ asset('/parks') }}" class="btn">Explorar Parques</a>
+    </div>       
+{% endblock %}
