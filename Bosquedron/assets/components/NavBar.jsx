@@ -1,8 +1,7 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faListCheck, faStar, faGear, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import '../styles/navBar.css';
 
 const NavBar = () => {
@@ -17,9 +16,17 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/parks" className='nav-link'>Parques Naturales</Nav.Link>
-                        <Nav.Link href="/about" className='nav-link'>About Us</Nav.Link>
-                        <Nav.Link href="/contact" className='nav-link'>Contact</Nav.Link>
+                        <Nav.Link href="/contact" className='nav-link'>Pase de naturaleza</Nav.Link>
+                        {/* <Nav.Link href="/about" className='nav-link'>About Us</Nav.Link>
+                        <Nav.Link href="/contact" className='nav-link'>Contact</Nav.Link> */}
                         <Nav.Link href="/login" className='nav-link'>Identifícate</Nav.Link>
+                        <NavDropdown title="Usuario" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/level"> <FontAwesomeIcon icon={faListCheck}/> Nivel</NavDropdown.Item>
+                            <NavDropdown.Item href="/reviews"> <FontAwesomeIcon icon={faStar}/> Mis reseñas</NavDropdown.Item>
+                            <NavDropdown.Item href="/settings"> <FontAwesomeIcon icon={faGear}/> Ajustes </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/logout"> <FontAwesomeIcon icon={faArrowRightFromBracket}/> Cerrar Sesión </NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

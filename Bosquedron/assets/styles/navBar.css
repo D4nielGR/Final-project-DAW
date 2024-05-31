@@ -1,4 +1,3 @@
-/* DISEÑO 1 */
 .custom-navbar {
     background-color: #97be4c; 
     padding: 10px;
@@ -34,6 +33,7 @@
 }
 
 .custom-navbar .nav-link {
+    text-align: center;
     color: #fed3b3 !important;
     font-family: 'Roboto', sans-serif; 
     font-size: 18px;
