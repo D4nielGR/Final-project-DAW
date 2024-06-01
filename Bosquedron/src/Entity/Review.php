@@ -26,6 +26,9 @@ class Review
     #[ORM\Column]
     private ?int $parkId = null;
 
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $reviewDate = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +78,18 @@ class Review
     public function setParkId(int $parkId): static
     {
         $this->parkId = $parkId;
+
+        return $this;
+    }
+
+    public function getReviewDate(): ?\DateTimeInterface
+    {
+        return $this->reviewDate;
+    }
+
+    public function setReviewDate(\DateTimeInterface $reviewDate): static
+    {
+        $this->reviewDate = $reviewDate;
 
         return $this;
     }

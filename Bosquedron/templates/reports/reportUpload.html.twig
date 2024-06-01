@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <button id="captureButton">Tomar Foto y Enviar</button>
+    <img id="photoPreview" src="#" alt="Vista previa de la foto" style="display: none; max-width: 100%; height: auto;">
+
+    <form id="reportForm" action="{{ path('upload_report') }}" method="post" enctype="multipart/form-data" style="display: none;">
+        <input type="hidden" id="photo" name="photo">
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+    </form>
+
+    <script>
+        const captureButton = document.getElementById('captureButton');
+        const photoPreview = document.getElementById('photoPreview');
+        const reportForm = document.getElementById('reportForm');
+        const photoInput = document.getElementById('photo');
+        const latitudeInput = document.getElementById('latitude');
+        const longitudeInput = document.getElementById('longitude');
+
+        // Verificar si el navegador es compatible con la API de MediaDevices
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia && navigator.geolocation) {
+            captureButton.addEventListener('click', async () => {
+                try {
+                    // Obtener acceso a la cámara
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    const video = document.createElement('video');
+                    video.srcObject = stream;
+                    video.play();
+
+                    video.addEventListener('loadedmetadata', () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+                        const imageData = canvas.toDataURL('image/png');
+
+                        photoPreview.src = imageData;
+                        photoPreview.style.display = 'block';
+
+                        stream.getTracks().forEach(track => track.stop());
+
+                        photoInput.value = imageData;
+
+                        // Obtener la ubicación del usuario
+                        navigator.geolocation.getCurrentPosition((position) => {
+                            latitudeInput.value = position.coords.latitude;
+                            longitudeInput.value = position.coords.longitude;
+
+                            // Enviar el formulario
+                            reportForm.submit();
+                        }, (error) => {
+                            console.error('Error al obtener la ubicación:', error);
+                        });
+                    });
+                } catch (error) {
+                    console.error('Error al acceder a la cámara:', error);
+                }
+            });
+        } else {
+            console.error('La API de MediaDevices o la API de Geolocalización no está soportada en este navegador.');
+        }
+    </script>
+    
+{% endblock %}

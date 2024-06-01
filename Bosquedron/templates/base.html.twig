@@ -26,10 +26,6 @@
     <body>
         {% block header %}
             <header id="navbar"></header>
-            {% if app.user %}
-                Hola, {{app.user.username}}
-                <a href="{{ path('app_logout') }}">Logout</a>
-            {% endif %}
         {% endblock %}
 
         {% block body %} {% endblock %}

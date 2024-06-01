@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="container mt-5">
+    <div class="m-3">
         <div class="row">
             <div class="col-md-12 text-center mb-4">
                 <h1 class="display-4">{{ park.name }}</h1>
@@ -34,6 +34,33 @@
             <div class="col-md-4">
                 <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="img-fluid rounded" alt="{{ park.name }}">
             </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                <h3>Reseñas</h3>
+                <div>
+                    {{n_reviews}} reviews
+                    <select id="sort_field" class="form-select">
+                        <option value="reviewDate" {% if sort_field == 'reviewDate' %}selected{% endif %}>Fecha</option>
+                        <option value="valoration" {% if sort_field == 'valoration' %}selected{% endif %}>Valoración</option>
+                    </select>
+                    <a id="sort_order_btn" href="?sort_field={{ sort_field }}&sort_order={{ sort_order == 'ASC' ? 'DESC' : 'ASC' }}">
+                        <img id="sort_order_img" src="{{ asset('images/' ~ (sort_order == 'ASC' ? 'up_arrow.png' : 'down_arrow.png')) }}" alt="Sort Order">
+                    </a>
+                </div>
+    
+                    <div class="mt-4">
+                        {% for review in reviews %}
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <p><strong>Usuario ID:</strong> {{ review.userId }}</p>
+                                    <p><strong>Valoración:</strong> {{ review.valoration }}</p>
+                                    <p><strong>Texto de la Reseña:</strong> {{ review.reviewText }}</p>
+                                    <p><strong>Fecha de la Reseña:</strong> {{ review.reviewDate|date('Y-m-d H:i:s') }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-{% endblock %}
+    {% endblock %}
