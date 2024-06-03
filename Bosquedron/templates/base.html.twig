@@ -6,18 +6,20 @@
         <link rel="icon" href="{{ asset('img/BosquedronLogoMini.png') }}">
         <title>Bosquedron</title>
 
-        {% block stylesheets %} {{ encore_entry_link_tags('app') }} {% endblock %}
-        {% block javascripts %} {{ encore_entry_script_tags('app') }} {% endblock %}
+    {# Carga los componentes que se encuentran en el fichero "app", dentro de la carpeta "assets" #}
+        {% block stylesheetsApp %} {{ encore_entry_link_tags('app') }} {% endblock %}
+        {% block javascriptsApp %} {{ encore_entry_script_tags('app') }} {% endblock %}
 
-        {% block stylesheets2 %}{% endblock %}
+    {# Bloque para futuros estilos que se incluyan en cada uno de los twigs #}
+        {% block stylesheets %}{% endblock %}
 
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {# Estilos genrales para extensiones del twig base#}
+        <link rel="stylesheet" href="{{ asset('css/base.css') }}">
 
-        
+    {# Estilos para el NavBar #}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" >
-        <link rel="stylesheet" href="{{ asset('../assets/styles/navBar.css') }}">
-
+    {# Scripst para el Navbar #}
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -31,7 +33,7 @@
         {% block body %} {% endblock %}
 
         {% block footer %}
-            <footer class="footer">
+            <footer id="footer">
                 <p>&copy; Bosquedron. Todos los derechos reservados.</p>
             </footer>
         {% endblock %}

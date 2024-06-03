@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faListCheck, faStar, faGear, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
-import '../styles/navBar.css';
+import '../../styles/base/NavBar.css';
 
 const NavBar = () => {
     const [profile, setProfile] = useState([]);

@@ -29,7 +29,7 @@ class HomeController extends AbstractController
     }
 
     #[Route('/parks/{namePark}', name: 'app_park')]
-    public function park(string $namePark, NaturalParksRepository $naturalParks, ReviewRepository $reviews, Request $request): Response
+    public function park(string $namePark, NaturalParksRepository $naturalParks): Response
     {
         //Muestra el parque según cual de ellos haya sido seleccionado
         $park = $naturalParks->findOneBy(['name' => $namePark]);
@@ -38,22 +38,8 @@ class HomeController extends AbstractController
             throw $this->createNotFoundException('El parque no existe.');
         }
 
-        //Peticiones para que el usuario pueda ordenar las reviews según la fecha o su valoración
-        $sortField = $request->query->get('sort_field', 'reviewDate');
-        $sortOrder = $request->query->get('sort_order', 'DESC');
-
-        //Selecciona solo las reviews del parque seleccionado anteriormente
-        $reviews = $reviews->findBy(['parkId' => $park->getId()], [$sortField => $sortOrder]);
-
-        //Número total de reviews del parque seleccionado
-        $nReviews = count($reviews);
-
         return $this->render('home/parks/park.html.twig', [
             "park" => $park,
-            "reviews" => $reviews,
-            'sort_field' => $sortField,
-            'sort_order' => $sortOrder,
-            'n_reviews' => $nReviews,
         ]);
     }
 

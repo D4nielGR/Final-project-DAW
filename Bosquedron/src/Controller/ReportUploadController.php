@@ -12,7 +12,7 @@ class ReportUploadController extends AbstractController
     #[Route('/report', name: 'app_report')]
     public function captureReport(): Response
     {
-        return $this->render('reports/reportUpload.html.twig');
+        return $this->render('home/reports/reportUpload.html.twig');
     }
 
     #[Route('/upload-report', name:'upload_report', methods:"POST")]

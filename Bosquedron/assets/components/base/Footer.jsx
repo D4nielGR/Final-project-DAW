@@ -1,8 +1,11 @@
+import React from 'react';
+import '../../styles/base/Footer.css';
+
 const Footer = () => {
     return (
-        <div class="container">
+        <footer>
             <p>&copy; Bosquedron. Todos los derechos reservados.</p>
-        </div>
+        </footer>
     );
 };
 

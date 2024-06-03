@@ -6,29 +6,24 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar';
-import Parks from './components/Parks';
-import Footer from './components/Footer';
+import NavBar from './components/base/NavBar';
+import Footer from './components/base/Footer';
+import Reviews from './components/park/Reviews';
 
-
+// base.html.twig
 const navBar = document.getElementById('navbar');
-if (navBar) {
-    createRoot(navBar).render(<NavBar/>);
-}
-
-/*
-const parks = document.getElementById('parks');
-if (parks) {
-    createRoot(parks).render(<Parks/>);
-}
-*/
-
+if (navBar) { createRoot(navBar).render(<NavBar/>); }
 
 const footer = document.getElementById('footer');
-if (footer) {
-    createRoot(footer).render(<Footer/>);
+if (footer) { createRoot(footer).render(<Footer/>); }
+
+
+//park.html.twig
+const reviews = document.getElementById('reviews');
+if (reviews) { 
+    const parkId = reviews.getAttribute('data-park-id');
+    createRoot(reviews).render(<Reviews parkId={parkId}/>); 
 }

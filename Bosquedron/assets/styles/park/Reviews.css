@@ -1,0 +1,33 @@
+.review-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.review-details {
+    margin-bottom: 10px;
+}
+
+.user-id,
+.valoration,
+.review-text,
+.review-date {
+    margin: 5px 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.user-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
