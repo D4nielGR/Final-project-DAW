@@ -16,9 +16,17 @@ class ReviewController extends AbstractController
     #[Route('/review/{parkId}', name: 'app_review')]
     public function reviews(string $parkId, Request $request, UserRepository $users, ReviewRepository $reviews): Response
     {
+        //Busca las reviews del parque actual
         $reviewsPark = $reviews->findBy(['parkId' => $parkId]);
         if (!$reviewsPark) { throw $this->createNotFoundException('La review no existe.'); }
+
+        // Calcular el total de las valoraciones
         $totalReviewsPark = count($reviewsPark);
+
+        // Calcular el promedio de las valoraciones
+        $totalReviews = 0;
+        foreach ($reviewsPark as $review) { $totalReviews += $review->getValoration(); }
+        $averageReviews = $totalReviewsPark > 0 ? $totalReviews / $totalReviewsPark : 0;
 
         /*$sortBy = $request->query->get('sortBy', 'date');
         $sortOrder = $request->query->get('sortOrder', 'asc');
@@ -29,22 +37,17 @@ class ReviewController extends AbstractController
         
         $reviewsData = [];
         foreach ($reviewsPark as $review) {
-            // Obtener el usuario asociado a la revisión
             $user = $users->find($review->getUserId());
-            // Verificar si se encontró el usuario
             if ($user) {
-                // Obtener el nombre de usuario
                 $username = $user->getUsername();
-                $userphoto = $user->getUserphoto();
+                $userphoto = "/storageDB/images/users/" . $user->getUserphoto();
             } else {
-                // Si no se encuentra el usuario, establecer un valor predeterminado
                 $username = 'Usuario desconocido';
                 $userphoto = 'Foto desconocida';
             }
     
             $reviewsData[] = [
                 'id' => $review->getId(),
-                'userId' => $review->getUserId(),
                 'valoration' => $review->getValoration(),
                 'reviewText' => $review->getReviewText(),
                 'reviewDate' => $review->getReviewDate(),
@@ -53,6 +56,10 @@ class ReviewController extends AbstractController
             ];
         }
 
-        return new JsonResponse(['reviews' => $reviewsData,'totalReviews' => $totalReviewsPark]);
+        return new JsonResponse([
+            'reviews' => $reviewsData,
+            'totalReviews' => $totalReviewsPark, 
+            'averageReviews' => $averageReviews
+        ]);
     }
 }

@@ -1,0 +1,54 @@
+/* Reg&Log/register.css */
+.bodyRegister .container {
+    max-width: 400px;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.bodyRegister h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bodyRegister label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.bodyRegister input[type="text"], input[type="password"], input[type="email"], input[type="file"], .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.bodyRegister input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="file"]:focus, .form-control:focus {
+    border-color: #5f6b3d;
+    box-shadow: 0 0 5px rgba(134, 130, 69, 0.5);
+    outline: none;
+}
+
+.bodyRegister button.btn {
+    background-color: #cc9f5b;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.bodyRegister button.btn:hover {
+    background-color: #967645;
+}

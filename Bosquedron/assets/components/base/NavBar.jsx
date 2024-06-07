@@ -55,21 +55,21 @@ const NavBar = () => {
                     <img src="/img/BosquedronLogo0.png" alt="Logo" width={100}/> 
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Nav className="me-auto">
+                {/* <Nav className="me-auto">
                     <a href="/" className="navbar-title-logo"><span className="navbar-title">BOSQUEDRON</span></a>
-                </Nav>
+                </Nav> */}
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/parks" className='nav-link'>Parques Naturales</Nav.Link>
-                        <Nav.Link href="/contact" className='nav-link'>Pase de naturaleza</Nav.Link>
+                        {/* <Nav.Link href="/contact" className='nav-link'>Pase de naturaleza</Nav.Link> */}
                         {checkUser && profile ? (<NavDropdown title={"Hola, " + profile.username} id="basic-nav-dropdown">
-                                                    <NavDropdown.Item href="/level"> <FontAwesomeIcon icon={faListCheck}/> Nivel</NavDropdown.Item>
+                                                    {/* <NavDropdown.Item href="/level"> <FontAwesomeIcon icon={faListCheck}/> Nivel</NavDropdown.Item> */}
                                                     <NavDropdown.Item href="/reviews"> <FontAwesomeIcon icon={faStar}/> Mis reseñas</NavDropdown.Item>
                                                     <NavDropdown.Item href="/settings"> <FontAwesomeIcon icon={faGear}/> Ajustes </NavDropdown.Item>
                                                     <NavDropdown.Divider />
                                                     <NavDropdown.Item href="/logout"> <FontAwesomeIcon icon={faArrowRightFromBracket}/> Cerrar Sesión </NavDropdown.Item>
                                                 </NavDropdown>)
-                                        
+
                                                 : <Nav.Link href="/login" className='nav-link'>Identifícate</Nav.Link>}
                     </Nav>
                 </Navbar.Collapse>

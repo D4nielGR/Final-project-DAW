@@ -1,0 +1,64 @@
+/* Body */
+.bodyPark {
+    padding: 20px;
+}
+
+div .card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-left: 5px solid #b5fc9f;
+}
+
+div .card-title {
+    color: #597f32;
+}
+
+div .park-photo {
+    border-radius: 15px;
+    border: 3px solid #7de65d;
+}
+
+.dark1-green-bg {
+    background-color: rgb(73, 153, 75, 0.2); 
+    padding: 10px; 
+}
+
+.dark2-green-bg {
+    background-color: rgb(39, 160, 43, 0.2); 
+    padding: 10px; 
+}
+
+.light1-green-bg {
+    background-color: rgb(134, 202, 134, 0.2); 
+    border-radius: 5px; 
+}
+
+.light2-green-bg {
+    background-color: rgb(152, 233, 152, 0.2);  
+    border-radius: 5px; 
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+}
+
+.info-row strong {
+    flex: 0 0 120px; 
+    margin-right: 10px;
+}
+
+.info-row span {
+    flex: 1;
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+ul li {
+    margin: 0;
+    padding: 10px 0; /* Ajusta el espaciado según sea necesario */
+}
+

@@ -1,0 +1,19 @@
+.star {
+    position: relative;
+    display: inline-block;
+    width: 24px; /* Ajustar según sea necesario */
+    height: 24px; /* Ajustar según sea necesario */
+}
+
+.dark-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #cccccc; /* Color de las estrellas oscuras */
+}
+
+.light-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

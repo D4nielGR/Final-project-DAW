@@ -6,10 +6,15 @@ use App\Entity\NaturalParks;
 use Doctrine\ORM\EntityManagerInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TelephoneField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\UrlField;
 
 class NaturalParksCrudController extends AbstractCrudController
 {
@@ -23,7 +28,8 @@ class NaturalParksCrudController extends AbstractCrudController
         $photoField = ImageField::new('photo', 'Foto del parque')
         ->setBasePath('/storageDB/images/naturalParks')
         ->setUploadDir('public/storageDB/images/naturalParks')
-        ->setUploadedFileNamePattern('[year]-[month]-[day]-[contenthash].[extension]');
+        ->setUploadedFileNamePattern('[year]-[month]-[day]-[contenthash].[extension]')
+        ->setRequired(true);
 
         // VERIFICAMOS SI ESTAMOS EN EDITAR PARA CORREGIR EL FALLO DEL CAMPO IMAGEN CON REQUIRE
         if ($pageName === Crud::PAGE_EDIT) {
@@ -34,25 +40,47 @@ class NaturalParksCrudController extends AbstractCrudController
             IdField::new('id')
                 ->hideOnForm(),
             
-            TextField::new('name', 'Nombre del parque'),
+            TextField::new('name', 'Nombre del parque')
+                ->setMaxLength(50)
+                ->setRequired(true),
             
             $photoField,
 
-            TextField::new('location', 'Localización del parque'),
+            TextField::new('location', 'Localización del parque')
+                ->setMaxLength(200)
+                ->setRequired(true),
 
-            TextField::new('phone', 'Teléfono del parque'),
+            TelephoneField::new('phone', 'Teléfono del parque')
+                // ->setMaxLength(9)
+                ->setHelp('Introduce solo números, hasta un máximo de 9')
+                ->setRequired(true),
 
-            TextField::new('email', 'Email del parque'), 
+            EmailField::new('email', 'Email del parque')
+                ->setHelp('Debe incluir "texto@texto.texto"')
+                ->setRequired(true),
 
-            TextField::new('website', 'Página web del parque'),
+            UrlField::new('website', 'Página web del parque')
+                ->setRequired(true)
+                ->setHelp('Debe ser una URL válida'),
             
-            TextField::new('presentation', 'Presentación del parque'),
+            TextareaField::new('presentation', 'Presentación del parque')
+                ->setMaxLength(4000)
+                ->setRequired(true)
+                ->setHelp('Presentación del parque, hasta un máximo de 4000 caracteres')
+                ->onlyOnForms(),
 
-            TextField::new('opening_times', 'Horario del parque'), 
+            TextField::new('opening_times', 'Horario del parque')
+                ->setRequired(true),
 
-            TextField::new('entry_fee', 'Precio de entrada del parque'),
+            MoneyField::new('entry_fee', 'Precio de entrada del parque')
+                ->setCurrency('EUR')
+                ->setNumDecimals(2)
+                ->setRequired(true)
+                ->setHelp('Solo números, hasta dos decimales'),
             
-            TextField::new('declared_in', 'Fecha de declaración del parque')
+            IntegerField::new('declared_in', 'Fecha de declaración del parque')
+                ->setRequired(true)
+                ->setHelp('Año de declaración del parque, hasta 4 números')
         ];
     }
 

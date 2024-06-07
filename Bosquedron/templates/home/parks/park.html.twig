@@ -1,38 +1,46 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/parks/park.css') }}">
+{% endblock %}
+
+
 {% block body %}
-    <div class="m-3">
-        <div class="row">
+    <div class="">
+        <div class="row mt-2">
             <div class="col-md-12 text-center mb-4">
                 <h1 class="display-4">{{ park.name }}</h1>
-                <p class="lead">Bienvenido a el Parque Natural {{ park.name }}</p>
             </div>
         </div>
 
-        <div class="row mb-5">
+        <div class="row pt-0 mb-5 bodyPark">
             <div class="col-md-8">
-                <div class="card mb-4">
+                <div class="card mb-4 presentation-card">
                     <div class="card-body">
                         <p class="card-text">{{ park.presentation }}</p>
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card mb-4 info-card">
                     <div class="card-body">
                         <h5 class="card-title"><em><b>Información del Parque</b></em></h5>
                         <ul class="list-unstyled">
-                            <li><strong>Localización:</strong> {{ park.location }}</li>
-                            <li><strong>Teléfono:</strong> {{ park.phone }}</li>
-                            <li><strong>Email:</strong> <a href="mailto:{{ park.email }}">{{ park.email }}</a></li>
-                            <li><strong>Sitio Web:</strong> <a href="{{ park.website }}" target="_blank">{{ park.website }}</a></li>
-                            <li><strong>Horario de Apertura:</strong> {{ park.openingTimes }}</li>
-                            <li><strong>Precio de Entrada:</strong> {{ park.entryFee }}€</li>
-                            <li><strong>Declarado en:</strong> {{ park.declaredIn }}</li>
+                            <li class="light1-green-bg"><div class="info-row"><strong class="dark1-green-bg">Localización</strong> <span>{{ park.location }}</span></div></li>
+                            <li class="light2-green-bg"><div class="info-row"><strong class="dark2-green-bg">Teléfono</strong> <span>{{ park.phone }}</span></div></li>
+                            <li class="light1-green-bg"><div class="info-row"><strong class="dark1-green-bg">Email</strong> <span><a href="mailto:{{ park.email }}">{{ park.email }}</a></span></div></li>
+                            <li class="light2-green-bg"><div class="info-row"><strong class="dark2-green-bg">Sitio Web</strong> <span><a href="{{ park.website }}" target="_blank">{{ park.website }}</a></span></div></li>
+                            <li class="light1-green-bg"><div class="info-row"><strong class="dark1-green-bg">Horario de Apertura</strong> <span>{{ park.openingTimes }}</span></div></li>
+                            {% if park.entryFee == 0 %}
+                                <li class="light2-green-bg"><div class="info-row"><strong class="dark2-green-bg">Precio de Entrada</strong> <span>Gratuita</span></div></li>
+                            {% else %}
+                                <li class="light2-green-bg"><div class="info-row"><strong class="dark2-green-bg">Precio de Entrada</strong> <span>{{ park.entryFee }} €</span></div></li>
+                            {% endif %}
+                            <li class="light1-green-bg"><div class="info-row"><strong class="dark1-green-bg">Declarado en</strong> <span>{{ park.declaredIn }}</span></div></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="img-fluid rounded" alt="{{ park.name }}">
+                <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="img-fluid rounded park-photo" alt="{{ park.name }}">
             </div>
             <div class="row mb-5">
                 <h3>Reseñas</h3>

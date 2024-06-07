@@ -10,15 +10,14 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/base/NavBar';
-import Footer from './components/base/Footer';
 import Reviews from './components/park/Reviews';
 
 // base.html.twig
 const navBar = document.getElementById('navbar');
 if (navBar) { createRoot(navBar).render(<NavBar/>); }
 
-const footer = document.getElementById('footer');
-if (footer) { createRoot(footer).render(<Footer/>); }
+// const footer = document.getElementById('footer');
+// if (footer) { createRoot(footer).render(<Footer/>); }
 
 
 //park.html.twig
