@@ -11,6 +11,7 @@ class Review
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
+    #[ORM\SequenceGenerator(sequenceName: 'review_id_seq', allocationSize: 1, initialValue: 1)]
     #[ORM\Column]
     private ?int $id = null;
 

@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Repository\NaturalParksRepository;
+use App\Entity\Review;
 use App\Repository\ReviewRepository;
 use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Doctrine\ORM\EntityManagerInterface;
 
 class ReviewController extends AbstractController
 {
@@ -61,5 +62,28 @@ class ReviewController extends AbstractController
             'totalReviews' => $totalReviewsPark, 
             'averageReviews' => $averageReviews
         ]);
+    }
+
+    #[Route('/api/review/newReview', name: 'app_newReview', methods: ['POST'])]
+    public function submitReview(Request $request, ReviewRepository $newReview, EntityManagerInterface $entityManager): Response
+    {
+            $data = json_decode($request->getContent(), true);
+
+            if ($data === null) {
+                throw new \Exception('Invalid JSON');
+            }
+
+            $review = new Review();
+            $review->setValoration($data['rating']);
+            $review->setReviewText($data['reviewText'] ?? null);
+            $review->setReviewDate(new \DateTime());
+            $review->setParkId($data['parkId']);
+            $review->setUserId($data['userId']);
+
+            $entityManager->persist($review);
+            $entityManager->flush();
+
+            return new JsonResponse(['status' => 'ok', 'received_data' => $data]);
+            
     }
 }

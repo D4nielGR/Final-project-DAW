@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MyUserController extends AbstractController
 {
-    #[Route('/reiews/{userReview}', name: 'app_myReviews')]
+    #[Route('/reviews/{userReview}', name: 'app_myReviews')]
     public function myReviews(string $userReview, ReviewRepository $myReviews): Response
     {
         $myReviews = $myReviews->findAll();

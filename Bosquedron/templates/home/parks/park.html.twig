@@ -44,6 +44,9 @@
             </div>
             <div class="row mb-5">
                 <h3>Reseñas</h3>
+                {% if app.user %}
+                    <div id="newReview" data-park-id="{{ park.id }}" data-user-id="{{ app.user.id }}"></div>
+                {% endif %}
                 <div id="reviews" data-park-id="{{ park.id }}"></div>
             </div>
         </div>
