@@ -18,8 +18,8 @@ class Review
     #[ORM\Column]
     private ?int $userId = null;
 
-    #[ORM\Column(type: Types::DECIMAL, precision: 2, scale: 1)]
-    private ?string $valoration = null;
+    #[ORM\Column]
+    private ?int $valoration = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $reviewText = null;
@@ -27,7 +27,7 @@ class Review
     #[ORM\Column]
     private ?int $parkId = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $reviewDate = null;
 
     public function getId(): ?int
@@ -47,12 +47,12 @@ class Review
         return $this;
     }
 
-    public function getValoration(): ?string
+    public function getValoration(): ?int
     {
         return $this->valoration;
     }
 
-    public function setValoration(string $valoration): static
+    public function setValoration(int $valoration): static
     {
         $this->valoration = $valoration;
 

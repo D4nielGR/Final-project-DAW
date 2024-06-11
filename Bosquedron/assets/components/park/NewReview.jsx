@@ -45,7 +45,7 @@ const NewReview = ({ parkId, userId }) => {
             if (!response.ok) { throw new Error('Algo salió mal'); }
             
             const result = await response.json();
-            console.log('Reseña enviada exitosamente:', result);
+            window.location.replace('');
 
             // Reset form
             setRating(0);

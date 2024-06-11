@@ -51,7 +51,7 @@ class ReviewController extends AbstractController
                 'id' => $review->getId(),
                 'valoration' => $review->getValoration(),
                 'reviewText' => $review->getReviewText(),
-                'reviewDate' => $review->getReviewDate(),
+                'reviewDate' => $review->getReviewDate()->format('Y-m-d H:i:s'),
                 'username' => $username,
                 'userphoto' => $userphoto,
             ];
@@ -65,7 +65,7 @@ class ReviewController extends AbstractController
     }
 
     #[Route('/api/review/newReview', name: 'app_newReview', methods: ['POST'])]
-    public function submitReview(Request $request, ReviewRepository $newReview, EntityManagerInterface $entityManager): Response
+    public function submitReview(Request $request, EntityManagerInterface $entityManager): Response
     {
             $data = json_decode($request->getContent(), true);
 
@@ -74,16 +74,19 @@ class ReviewController extends AbstractController
             }
 
             $review = new Review();
-            $review->setValoration($data['rating']);
-            $review->setReviewText($data['reviewText'] ?? null);
-            $review->setReviewDate(new \DateTime());
-            $review->setParkId($data['parkId']);
-            $review->setUserId($data['userId']);
+            $review->setValoration((int) $data['rating']);
+            $review->setReviewText($data['textReview']);
+            $review->setParkId((int) $data['parkId']);
+            $review->setUserId((int) $data['userId']);
+
+            $currentDate = new \DateTime();
+            $formattedDate = $currentDate->format('Y-m-d H:i:s');
+            $review->setReviewDate(\DateTime::createFromFormat('Y-m-d H:i:s', $formattedDate));
+            
 
             $entityManager->persist($review);
             $entityManager->flush();
 
             return new JsonResponse(['status' => 'ok', 'received_data' => $data]);
-            
     }
 }

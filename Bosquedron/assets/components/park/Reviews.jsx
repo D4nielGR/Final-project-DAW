@@ -9,7 +9,7 @@ const Reviews = ({ parkId, rating }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [sortBy, setSortBy] = useState('date');
-    const [sortOrder, setSortOrder] = useState('asc');
+    const [sortOrder, setSortOrder] = useState('desc');
 
 
     const fetchReviews = async () => {
@@ -19,7 +19,7 @@ const Reviews = ({ parkId, rating }) => {
             const data = await response.json();
             setReviews(data.reviews);
             setTotalReviews(data.totalReviews);
-            setAverageReviews(data.averageReviews);
+            setAverageReviews(data.averageReviews.toFixed(2));
             const sortedReviews = data.reviews.sort((a, b) => {
                 let comparison = 0;
                 if (sortBy === 'date') {
