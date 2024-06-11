@@ -74,6 +74,7 @@ class NaturalParksCrudController extends AbstractCrudController
 
             MoneyField::new('entry_fee', 'Precio de entrada del parque')
                 ->setCurrency('EUR')
+                ->setStoredAsCents(false)
                 ->setNumDecimals(2)
                 ->setRequired(true)
                 ->setHelp('Solo números, hasta dos decimales'),

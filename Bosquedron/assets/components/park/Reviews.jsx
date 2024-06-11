@@ -47,7 +47,7 @@ const Reviews = ({ parkId, rating }) => {
     const toggleSortOrder = () => { setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc'); };
 
     if (loading) { return <div>Cargando...</div>; }
-    if (totalReviews === 0) { return <div>No hay reviews disponibles.</div>; }
+    if (totalReviews.length === 0) { return <div>No hay reviews disponibles.</div>; }
     if (error) { return <div>Error: {error.message}</div>; }
 
     return (

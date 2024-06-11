@@ -41,11 +41,6 @@ class UserCrudController extends AbstractCrudController
             TextField::new('username')
                 ->setMaxLength(50)
                 ->setRequired(true),
-                
-            TextField::new('password')
-                ->setFormType(PasswordType::class)
-                ->setRequired(true)
-                ->setHelp('Debe ser una contraseña segura'),
             
             ChoiceField::new('roles')
                 ->setChoices([

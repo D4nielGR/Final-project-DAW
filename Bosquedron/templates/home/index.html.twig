@@ -1,11 +1,132 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="tittle">   
-        <img src="{{ asset('img/BosquedronTittle.svg') }}" alt="Imagen de un parque natural">
+<div class="container mt-5 norm">
+    <h1 style="text-align: center;">Algunos de nuestros Parques</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% for park in parks %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                            <a href="{{ asset('parks/' ~ park.name) }}">
+                                <img src="{{ asset('storageDB/images/naturalParks/' ~ park.photo) }}" class="d-block w-100" alt="{{ park.name }}">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>{{ park.name }}</h5>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <p>Descubre la belleza de los parques naturales de nuestra región. Aquí encontrarás información detallada sobre cada parque, incluyendo su flora, fauna, rutas de senderismo y mucho más.</p>
-        <a href="{{ asset('/parks') }}" class="btn">Explorar Parques</a>
-    </div>       
+</div>
+
+<div class="container my-5 popu">
+    <h1 style="text-align: center; color: gold;">Los mejores Valorados</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div id="carouselTopRated" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% for parkTop in parksTop %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                            <img src="{{ asset('storageDB/images/naturalParks/' ~ parkTop.park.photo) }}" class="d-block w-100" alt="{{ parkTop.park.name }}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ parkTop.park.name }}</h5>
+                                <span class="badge-custom">Valoración: {{ parkTop.average }}</span>
+                                <span class="badge-custom">Reseñas totales: {{ parkTop.totalReviews }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev custom-prev" href="#carouselTopRated" role="button" data-slide="prev">
+                    <span class="custom-prev-icon" aria-hidden="true">&lt;</span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next custom-next" href="#carouselTopRated" role="button" data-slide="next">
+                    <span class="custom-next-icon" aria-hidden="true">&gt;</span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<style>
+.norm .carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+.norm .carousel-item img {
+    max-height: 400px; 
+    min-height: 400px;
+    object-fit: cover; 
+}
+
+.norm .carousel-caption {
+    background: rgba(48, 83, 46, 0.2); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popu .carousel-fade .carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.popu .carousel-item img {
+    max-height: 450px;
+    min-height: 450px;
+    object-fit: cover; 
+    border: 1px solid gold;
+    box-shadow: 0 0 8px gold;
+}
+
+.popu .carousel-caption {
+    background: rgba(255, 215, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.popu .carousel-caption h5 {
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.popu .custom-prev, .custom-next {
+    background-color: rgba(255, 215, 0, 0.1); 
+    width: 40px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.popu .custom-prev-icon, .custom-next-icon {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popu .custom-prev:hover, .custom-next:hover {
+    background-color: rgba(255, 215, 0, 0.4); 
+}
+
+.badge-custom {
+    background-color: rgba(93, 180, 114, 0.7); /* Fondo verde con 50% de opacidad */
+    color: white; /* Color del texto */
+    padding: 0.5em 1em; /* Espaciado interno */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    display: inline-block;
+    font-size: 0.875em; /* Tamaño del texto */
+}
+
+</style>
 {% endblock %}

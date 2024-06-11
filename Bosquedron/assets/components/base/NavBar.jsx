@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faListCheck, faStar, faGear, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faListCheck, faStar, faGear, faArrowRightFromBracket,faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/base/NavBar.css';
 
 const NavBar = () => {
@@ -64,9 +64,12 @@ const NavBar = () => {
                         {/* <Nav.Link href="/contact" className='nav-link'>Pase de naturaleza</Nav.Link> */}
                         {checkUser && profile ? (<NavDropdown title={"Hola, " + profile.username} id="basic-nav-dropdown">
                                                     {/* <NavDropdown.Item href="/level"> <FontAwesomeIcon icon={faListCheck}/> Nivel</NavDropdown.Item> */}
-                                                    <NavDropdown.Item href="/reviews"> <FontAwesomeIcon icon={faStar}/> Mis reseñas</NavDropdown.Item>
+                                                    {/* <NavDropdown.Item href="/reviews"> <FontAwesomeIcon icon={faStar}/> Mis reseñas</NavDropdown.Item>
                                                     <NavDropdown.Item href="/settings"> <FontAwesomeIcon icon={faGear}/> Ajustes </NavDropdown.Item>
-                                                    <NavDropdown.Divider />
+                                                    <NavDropdown.Divider /> */}
+                                                    {profile.roles.includes("ROLE_ADMIN") && (
+                                                        <NavDropdown.Item href="/admin"> <FontAwesomeIcon icon={faScrewdriverWrench}/> Panel de control </NavDropdown.Item>
+                                                    )}
                                                     <NavDropdown.Item href="/logout"> <FontAwesomeIcon icon={faArrowRightFromBracket}/> Cerrar Sesión </NavDropdown.Item>
                                                 </NavDropdown>)
 
