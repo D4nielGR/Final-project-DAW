@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/park/Reviews.css';
 import StarRating from './StarRating';
+import config from '../ip.js';
+
+const apiUrl = config.apiUrl;
 
 const Reviews = ({ parkId, rating }) => {
     const [reviews, setReviews] = useState([]);
@@ -14,7 +17,7 @@ const Reviews = ({ parkId, rating }) => {
 
     const fetchReviews = async () => {
         try {
-            const response = await fetch(`http://127.0.0.1:8000/review/${parkId}`);
+            const response = await fetch(`${apiUrl}/review/${parkId}`);
             if (!response.ok) {throw new Error('Error al obtener los datos de las reviews');}
             const data = await response.json();
             setReviews(data.reviews);

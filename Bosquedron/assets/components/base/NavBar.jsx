@@ -3,6 +3,9 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faListCheck, faStar, faGear, faArrowRightFromBracket,faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/base/NavBar.css';
+import config from '../ip.js';
+
+const apiUrl = config.apiUrl;
 
 const NavBar = () => {
     const [profile, setProfile] = useState([]);
@@ -22,7 +25,7 @@ const NavBar = () => {
     }, []);
     
     const fetchProfile = async () => {
-        const response = await fetch('http://127.0.0.1:8000/profile');
+        const response = await fetch(`${apiUrl}/profile`);
         if (!response.ok) {throw new Error('Error al obtener los datos del perfil');}
         const data = await response.json();
         setProfile(data);
@@ -30,7 +33,7 @@ const NavBar = () => {
     };
 
     const fetchCheckLogIn = async () => {
-        const response = await fetch('http://127.0.0.1:8000/checkLogIn');
+        const response = await fetch(`${apiUrl}/checkLogIn`);
         if (!response.ok) {throw new Error('Error el checkeo del inicio de sesión');}
         const data = await response.text();
         setCheckUser(data === "true");

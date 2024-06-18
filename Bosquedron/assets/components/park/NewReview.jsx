@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import config from '../ip.js';
+
+const apiUrl = config.apiUrl;
 
 const NewReview = ({ parkId, userId }) => {
     const [showModal, setShowModal] = useState(false);
@@ -36,7 +39,7 @@ const NewReview = ({ parkId, userId }) => {
         const reviewData = { rating, textReview: trimmedTextReview, parkId, userId };
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/review/newReview', {
+            const response = await fetch(`${apiUrl}/api/review/newReview`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', },
                 body: JSON.stringify(reviewData),
