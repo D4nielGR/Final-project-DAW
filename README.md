@@ -25,9 +25,12 @@
    - [Objetivos](#objetivos)
    - [Medios hardware y software a utilizar](#medios-hardware-y-software-a-utilizar)
    - [Planificación](#planificación)
-
-
-
+   - [Trabajos realizados](#trabajos-realizados)
+   - [Problemas encontrados](#problemas-encontrados)
+   - [Modificaciones sobre el proyecto planteado inicialmente](#modificaciones-sobre-el-proyecto-planteado-inicialmente)
+   - [Bibliografía](#bibliografía)
+   - [Montaje en local](#montaje-en-local)
+   - [Conclusión](#conclusión)
 
 <br>
 <br>
