@@ -1,2 +1,2 @@
-const config = { apiUrl: 'http://54.147.14.116:80' };
+const config = { apiUrl: 'http://35.169.14.241:80' };
 export default config;
