@@ -1,4 +1,4 @@
-# ANTEPROYECTO
+# PROYECTO
 
 ![TítuloBosquedron](./BosquedronReadme/BosquedronTittle.svg "Título")
 ![LogoBosquedron](./BosquedronReadme/BosquedronLogo.png "Logo")
@@ -128,7 +128,11 @@
    * **phpMyAdmin:** Herramienta de administración de bases de datos MySQL para gestionar y manipular la base de datos de manera eficiente. 
 
 
+
+
 <br>
+
+
 
 
 ## Planificación
@@ -173,3 +177,142 @@
    Una vez todo funcione correctamente ya tendré la primera versión de mi proyecto funcional, este lo mantendré guardado y lanzado en la web. Gracias a algunos usuarios, que yo mismo me encargaré de buscar para que prueben la página, estaré informado sobre cualquier problema de más que pueda ocurrir en la página. Por otra parte, la página también se mejorará funcionalmente, sino que también ire implmentando alguna que otra idea de más que se me pueda ocurrir a lo largo del proyecto. Así pues, no es una estimación del todo acertada, al igual que otras muchas, ya que debido a ciertas dificultades entre alguna otra función o código puede que estas varien .
       
    > Tiempo estimado de 8 horas
+
+
+
+
+<br>
+
+
+
+
+## Trabajos realizados
+   Finalmente el proyecto trata de una página web en la cuál se puede ver información distintiva sobre cada uno de los parques. Estos parques son creados por el administrador de la página web, a petición del parque. Es decir, son los parques los que son incluidos por los administradores, al incluirlos se introducen todos los datos necesarios de cada parque, como puede ser su nombre, precio de entrada, horario, teléfono, etc.
+   
+   Solo los administradores son los encargados de manejar estos datos, pueden crearlo, editarlo o borrarlo. Además de otras entidades.
+   
+   Por otro lado tendremos a los usuarios corrientes, los cuales podran ver la información de los parques, dadas por el parque, he introducidas por el administrador en la página web del proyecto. Estos pueden crear una cuenta con un email, su contraseña, nombre, y foto(si así lo desean, ya que sino dispondrán de una predeterminada). Al iniciar sesión como usuario la página te lo hará saber, ya que en el navegador se sustituye el "Identifícate" por un "Hola, X". Además, al estar logueado podrás escribir reseñas en los parques, esta reseña se quedará guardada en función del parque donde te encuentres, y se mostrará en la página web con tu nombre y tu foto de perfil. si no estas logueado también podrás ver perfectamente las reseñas, pero no podrás añadir una.
+   
+
+
+
+<br>
+
+
+
+
+## Problemas encontrados
+   A lo largo de mi proyecto he encontrado varios problemas, ya que mi idea de proyecto era muy diferente a la propuesta.
+   
+   En primer lugar, la idea principal de la página se trataba de la subida de fotos y estas se mandarían a un usuario trabajador. Me ha sido imposible, en mi caso, conseguir que esto funcione, el propio tema de las fotos es algo que me ha dado problemas a lo largo del proyecto, de hecho, las fotos a la hora de lanzar mi proyecto en una instancia y que se muestre con un servidor nginx, las fotos no las reconoce a la hora de que un usuario las envie. 
+   
+   En segundo lugar, viendo la situación y el problema que me daban las fotos, tuve que descartar otra de mis ideas, que trataba la cultura de cada parque, en esta cada parque podría subir vídeos, a modo de documentales sobre sus parques, y que los usuarios pudieran ver los vídeos, pero viendo que no había solución con las fotos decidí no intentarlo mejor.
+   
+   Otra de las ideas, era la subida de fotos de usuarios para realizar misiones en la página web, cada parque, o la página en general. Se tenía previsto que existiera un apartado donde podrían realizar misiones subiendo fotos, y ganando experiencia. Estas fotos proporcionarían puntos a los usuarios para subir de nivel y reclamar recompensas. Por ejemplo, una misión que puede ser "Manda una foto de un mono" y el usuario subiría la foto, y el trabajador sería el que verificara la veracidad de la misma.
+   
+   En resumen, la página trataba con varios aspectos en cuanto a fotografías, dado que no he conseguido incluirlas en mi proyecto he tenido que optar por quitar varias ideas/apartados de los que tenía previsto, se pueden observar en los puntos anteriores.
+   
+
+
+
+<br>
+
+
+
+
+## Modificaciones sobre el proyecto planteado inicialmente
+   Como ya he mencionado, durante el proyecto se han realizado varios cambios en cuanto a la idea original de la página. Sobretodo, se han descartado varios apartados de los que he tratado.
+   
+   Así que, se ha incluido la idea de las reseñas, además de la información que muestra cada parque. en un principio la idea era que hubiera tres roles de usuario; administrador, trabajador y usuario, pero esto se ha reducido simplemente a administrador y usuario, ya que la tarea principal del trabajador era manejar las acciones de cada parque, de los usuarios que mandarán las fotos, ya sean de tareas o de peligros. Entonces el administrador sería el encargado de la página, tanto de la información de los parques, de las reseñas y de los usuarios, estos pueden además incluir más administradores editando a los usuarios existentes, o creando alguno nuevo.
+   
+
+
+
+<br>
+
+
+
+
+## Bibliografía
+   Principalmente en cuanto a menciones del desarrollo del proyecto, he usado varios enlaces, los cuales detallaré en "Montaje en local" y algunos más que haya necesitado por ciertos problemas, como puede ser a la hora de instalar algún software necesario, en Windows no me ha ocasionado problemas apenas, en debian ha sido más común.
+   
+   En cuanto a otras menciones, que no se traten del desarrollo, he mirado ebn cada página individualmente para adquirir dicha información de algunos parques, especialmente me ayude de esta página que consta de varios parques:
+   
+   [Parques Naturales](https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/legislacion-autonomica-nacional/parques-naturales)
+
+
+
+<br>
+
+
+
+
+## Montaje en local
+   Se trata de una guía para poder lanzar este proyecto de manera local. Yo trataré de indicar los dos métodos más comunes que son en Windows y en Linux. En primer lugar, ya que el proyecto usa de React y Symfony habrá que instalar los manejadores de dependencias de las mismas, para que puedan manejar las distintas dependencias del proyecto.
+
+<br>
+
+   ### ***1º*** De lado de Symfony instalaremos PHP
+   
+      > En Windows, desde la página oficial se indica mejor detallado "https://www.php.net/downloads"
+      > En Linux, podremos usar el gestor de paquetes, por ejemplo, con el comando "sudo apt-get install php"
+
+   A continuación, instalar el Composer(gestor de dependencias para PHP) y posteriormente Symfony CLI
+
+   - Sigue las instrucciones oficiales en para instalar Composer [getcomposer.org](https://getcomposer.org/)
+   
+   - Sigue las instrucciones oficiales en para instalar Symfony CLI [symfony.com/download](https://symfony.com/download)
+
+<br>
+
+   ### ***2º*** De lado de React instalaremos Node.js
+
+   Sigue las instrucciones oficiales en para instalar Node.js [nodejs.org](https://nodejs.org/en), este incluye npm
+
+<br>
+
+   ### ***3º*** Instalar las dependencias del proyecto
+
+   Situados en el proyecto y con todo instalado realizaremos las instalaciones de las dependencias de cada lado: 
+      
+   Para las dependencias de Symfony:
+   
+      > composer install
+
+   Para las dependencias de React:
+      
+      > npm install
+
+<br>
+
+   ### ***4º*** Base de datos
+
+   Descargar PostgresSQL
+   Usar el archivo que se encuentra dentro de la carpeta de "Bosquedron", para añadir la base de datos de bosquedron, con sus respectivas tablas y algunos ejemplos.
+   Enlazar la base de datos al archivo ".env" del proyecto
+
+<br>
+   
+   ### ***5º*** Comandos para arrancar
+
+   Situados en el proyecto y ejecutaremos los siguientes comandos: 
+      
+   Para arrancar Symfony:
+   
+      > symfony serve
+
+   Para arrancar React:
+      
+      > npm run dev
+
+
+
+
+<br>
+
+
+
+
+## Conclusión
+   Como conclusión del proyecto realizado 
+   
