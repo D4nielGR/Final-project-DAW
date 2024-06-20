@@ -189,11 +189,28 @@
 
 
 ## Trabajos realizados
-   Finalmente el proyecto trata de una página web en la cuál se puede ver información distintiva sobre cada uno de los parques. Estos parques son creados por el administrador de la página web, a petición del parque. Es decir, son los parques los que son incluidos por los administradores, al incluirlos se introducen todos los datos necesarios de cada parque, como puede ser su nombre, precio de entrada, horario, teléfono, etc.
+   Finalmente el proyecto trata de una página web en la cuál se puede ver información distintiva sobre cada uno de los parques. 
+   ![Muestra01](./BosquedronReadme/Cap01.png "Muestra01")
+   
+   Estos parques son creados por el administrador de la página web, a petición del parque. Es decir, son los parques los que son incluidos por los administradores, al incluirlos se introducen todos los datos necesarios de cada parque, como puede ser su nombre, precio de entrada, horario, teléfono, etc.
    
    Solo los administradores son los encargados de manejar estos datos, pueden crearlo, editarlo o borrarlo. Además de otras entidades.
    
-   Por otro lado tendremos a los usuarios corrientes, los cuales podran ver la información de los parques, dadas por el parque, he introducidas por el administrador en la página web del proyecto. Estos pueden crear una cuenta con un email, su contraseña, nombre, y foto(si así lo desean, ya que sino dispondrán de una predeterminada). Al iniciar sesión como usuario la página te lo hará saber, ya que en el navegador se sustituye el "Identifícate" por un "Hola, X". Además, al estar logueado podrás escribir reseñas en los parques, esta reseña se quedará guardada en función del parque donde te encuentres, y se mostrará en la página web con tu nombre y tu foto de perfil. si no estas logueado también podrás ver perfectamente las reseñas, pero no podrás añadir una.
+   Por otro lado tendremos a los usuarios corrientes, los cuales podran ver la información de los parques, dadas por el parque, he introducidas por el administrador en la página web del proyecto. Estos pueden crear una cuenta con un email, su contraseña, nombre, y foto(si así lo desean, ya que sino dispondrán de una predeterminada). 
+   
+   ![Muestra04](./BosquedronReadme/Cap04.png "Muestra04")
+   ![Muestra05](./BosquedronReadme/Cap05.png "Muestra05")
+   
+   Al iniciar sesión como usuario la página te lo hará saber, ya que en el navegador se sustituye el "Identifícate" por un "Hola, X". 
+   ![Muestra06](./BosquedronReadme/Cap06.png "Muestra06")
+   
+   
+   Además, al estar logueado podrás escribir reseñas en los parques, esta reseña se quedará guardada en función del parque donde te encuentres, y se mostrará en la página web con tu nombre y tu foto de perfil. si no estas logueado también podrás ver perfectamente las reseñas, pero no podrás añadir una.
+   ![Muestra07](./BosquedronReadme/Cap07.png "Muestra07")
+   ![Muestra08](./BosquedronReadme/Cap08.png "Muestra08")
+
+   Al no introducir una foto al usuario se le asocia una foto predeterminada que se encuentra en el proyecto, pero un usuario también puede tener una foto que desee y se mostrará en las reseñas
+   ![Muestra09](./BosquedronReadme/Cap09.png "Muestra09")
    
 
 
