@@ -30,7 +30,6 @@
    - [Modificaciones sobre el proyecto planteado inicialmente](#modificaciones-sobre-el-proyecto-planteado-inicialmente)
    - [Bibliografía](#bibliografía)
    - [Montaje en local](#montaje-en-local)
-   - [Conclusión](#conclusión)
 
 <br>
 <br>
@@ -290,9 +289,11 @@
 
    ### ***4º*** Base de datos
 
-   Descargar PostgresSQL
-   Usar el archivo que se encuentra dentro de la carpeta de "Bosquedron", para añadir la base de datos de bosquedron, con sus respectivas tablas y algunos ejemplos.
-   Enlazar la base de datos al archivo ".env" del proyecto
+   - Descargar PostgresSQL
+     
+   - Usar el archivo que se encuentra dentro de la carpeta de "Bosquedron", para añadir la base de datos de bosquedron, con sus respectivas tablas y algunos ejemplos.
+   
+   - Enlazar la base de datos al archivo ".env" del proyecto
 
 <br>
    
@@ -307,15 +308,3 @@
    Para arrancar React:
       
       > npm run dev
-
-
-
-
-<br>
-
-
-
-
-## Conclusión
-   Como conclusión del proyecto realizado 
-   
