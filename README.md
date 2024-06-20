@@ -250,7 +250,7 @@
 
 
 ## Montaje en local
-   Se trata de una guía para poder lanzar este proyecto de manera local. Yo trataré de indicar los dos métodos más comunes que son en Windows y en Linux. En primer lugar, ya que el proyecto usa de React y Symfony habrá que instalar los manejadores de dependencias de las mismas, para que puedan manejar las distintas dependencias del proyecto.
+   Se trata de una guía para poder lanzar este proyecto de manera local. En primer lugar, ya que el proyecto usa de React y Symfony habrá que instalar los manejadores de dependencias de las mismas, para que puedan manejar las distintas dependencias del proyecto.
 
 <br>
 
@@ -289,9 +289,9 @@
 
    ### ***4º*** Base de datos
 
-   - Descargar PostgresSQL
+   - Descargar PostgreSQL
      
-   - Usar el archivo que se encuentra dentro de la carpeta de "Bosquedron", para añadir la base de datos de bosquedron, con sus respectivas tablas y algunos ejemplos.
+   - Usar el archivo "BosquedronDB.sql" que se encuentra dentro de la carpeta de "Bosquedron", para añadir la base de datos de bosquedron a tu postgreSQL, con sus respectivas tablas y algunos ejemplos.
    
    - Enlazar la base de datos al archivo ".env" del proyecto
 
